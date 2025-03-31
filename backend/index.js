@@ -17,10 +17,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-  origin: "http://localhost:5175",
+  origin: ["http://localhost:5175", "https://findjobpk78.netlify.app"],
   credentials: true,
 };
-
 
 app.use(cors(corsOptions));
 
